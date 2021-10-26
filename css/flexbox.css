@@ -1,0 +1,85 @@
+/* ================================= 
+  Base Styles
+==================================== */
+
+body {
+	display: flex;
+	flex-direction: column;
+	/*min-height: 100vh;*/
+}
+
+.menu-container {
+	display: flex;
+	flex-direction: column;
+}
+
+.col {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.menu-description {
+	display: flex;
+	flex-direction: column;
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.main-header,
+.main-nav {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.food-pic,
+.menu-text {
+	align-self: center;
+}
+
+
+/* ================================= 
+  Media Queries
+==================================== */
+
+@media (min-width: 769px) {
+
+	.menu-description {
+		flex-direction: row;
+		justify-content: space-around;
+	}
+
+	.row {
+		display: flex;
+		flex-wrap: nowrap;
+		flex-direction: row;
+		justify-content: center;
+	}
+
+@media (min-width: 1025px) {
+
+	.main-header {
+		flex-direction: row;
+		justify-content: space-between;
+	}
+	.menu-container {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+	.menu-item {
+	}
+	.menu-description {
+		flex-direction: column;
+		flex-grow: 1;
+	}
+
+}
